@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.arjun.sreefashions.Main4Activity"
+    android:background="@android:color/background_dark">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sree Fashions"
+        android:textSize="40dp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|italic"
+        android:singleLine="false"
+        android:onClick="home"
+        android:id="@+id/n"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/n">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/table1"
+        android:weightSum="1"
+        android:layout_marginTop="30dp"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NUMBER   :"
+            android:id="@+id/textView"
+            android:textSize="25dp"
+            android:textColor="@android:color/white"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:hint="8801220939"
+            android:inputType="phone"
+            android:textColorHint="#4c4848" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/table2"
+        android:weightSum="1"
+        android:layout_below="@id/table1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME        :"
+            android:id="@+id/textView1"
+            android:textSize="25dp"
+            android:textColor="@android:color/white"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editText1"
+            android:textColor="@android:color/white"
+            android:hint="SREE FASHIONS"
+            android:textSize="25dp"
+            android:inputType="textPersonName"
+            android:textColorHint="#4c4848" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/table3"
+        android:weightSum="1"
+        android:layout_below="@id/table2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOB            :"
+            android:id="@+id/textView2"
+            android:textSize="25dp"
+            android:textColor="@android:color/white"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:hint="DD/MM/YYYY"
+            android:inputType="date"
+            android:textColorHint="#4c4848" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/table4"
+        android:weightSum="1"
+        android:layout_below="@id/table3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AMOUNT   :"
+            android:id="@+id/textView3"
+            android:textSize="25dp"
+            android:textColor="@android:color/white"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:hint="1500"
+            android:inputType="number"
+            android:textColorHint="#4c4848" />
+    </TableRow>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DONE!"
+        android:id="@+id/up"
+        android:layout_below="@+id/table4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp"
+        android:onClick="up"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\@ClassicMonstersIndia"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:layout_below="@+id/up"
+            android:paddingTop="20dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>
